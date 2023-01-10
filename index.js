@@ -88,7 +88,9 @@ export const addSneakerCount = ({ shoes, slogan, logo, headquarters }) => {
 // INPUT: brands from data.js
 // OUTPUT: the brand names listed
 // REQS: use Object.keys to solve
-export const getBrandNames = () => {}
+export const getBrandNames = (brands) => {
+  return Object.keys(brands)
+}
 
 // INPUT: brands from data.js
 // OUTPUT: total number of sneaker types across all brands (14)
