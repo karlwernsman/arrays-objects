@@ -80,8 +80,8 @@ export const getFirstTwoArgs = (a, b, ...rest) => {
 //    use spread operator to create a new object
 
 export const addSneakerCount = ({ shoes, slogan, logo, headquarters }) => {
-  const sneakerCount = [...shoes].length
   const shoeArray = [...shoes]
+  const sneakerCount = shoeArray.length
   return { shoeArray, slogan, logo, headquarters, sneakerCount }
 }
 
